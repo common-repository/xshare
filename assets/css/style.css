@@ -1,0 +1,188 @@
+/**
+ * @package xshare
+ * @author rainastudio
+ * @version 1.0.1
+ */
+
+@import url(font.css);
+
+#xShareF .mct_xShare {
+  margin-top: 20px;
+}
+.mct_xShare {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+  padding: 20px 0 20px 0;
+  margin: 0 0 20px 0;
+  float: left;
+  background: #ffffff;
+}
+.mct_xShare * {
+  box-sizing: border-box;
+}
+.mct_xShare_container {
+  display: flex;
+}
+.mct_xShare_counter {
+  font-weight: 700;
+  padding-right: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  border-right: 1px solid #dfdfdf;
+  padding: 7px 20px 5px 5px;
+  margin: 0 20px 0 0;
+  color: #333;
+  font-family: 'Proxima Nova', 'proxima-nova', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  line-height: .8;
+}
+.mct_xShare_counter .total-text {
+  color: #b1a9a5;
+  font-size: 12px;
+  font-weight: 700;
+}
+.mct_xShare_counter div {
+  position: relative;
+  font-size: 18px;
+  line-height: 18px;
+  bottom: 2px;
+  font-weight: 100;
+}
+.mct_xShare_buttons {
+height: 100%;width: 100%;
+}
+
+.mct_xShare_buttons a {
+  margin-right: 10px;
+  float: left;
+}
+.mct_xShare_buttons a:hover{
+border-radius:5px;
+text-decoration: none;
+}
+
+.xShare_btn {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  color: #fff;
+  font-size: 14px;
+  background: #2d2d2d;
+  transition: all 0.3614s ease-in-out;
+  -webkit-transition: all 0.3614s ease-in-out;
+  -moz-transition: all 0.3614s ease-in-out;
+  -o-transition: all 0.3614s ease-in-out;
+}
+.xShare_btn:hover, .xShare_btn:focus{color: #fff;}
+
+.xShare_btn.facebook {
+  background: #3a589e;
+  border: 1px solid #3a589e;
+}
+.xShare_btn.twitter {
+  background: #55acee;
+  border: 1px solid #55acee;
+}
+.xShare_btn.pinterest {
+  background: #e50022;
+  border: 1px solid #e50022;
+}
+.xShare_btn.linkedin {
+  background: #0077b5;
+  border: 1px solid #0077b5;
+}
+.xShare_btn_text .fa {
+  padding: 0 10px 0 0;
+  font-size: 15px;
+  position: relative;
+  top: 0px;
+}
+.xShare_btn.buffer {
+  color: #2d2d2d;
+  background: #fff;
+  border: 1px solid #2d2d2d;
+}
+.xShare_btn.buffer .fa {
+  background: url(../img/buffer-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  margin-right: 10px;
+}
+.xShare_mct {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  text-decoration: none;
+  padding: 2px 4px;
+  font-family: cursive;
+  font-size: 9px;
+}
+#xShare_v .mct_xShare {
+  position: fixed;
+  top: 50%;
+  display: inherit;
+  max-width: 60px;
+  transform: translateY(-50%);
+  border: 0px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+#xShare_v .mct_xShare_container {
+  display: inherit;
+}
+#xShare_v .mct_xShare_counter {
+  border: 0;
+  margin: 0;
+  padding: 6.5px;
+}
+#xShare_v .mct_xShare_buttons a {
+  float: none;
+  display: block;
+  margin-right: 1px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 0px;
+}
+#xShare_v .xShare_btn_text .fa {
+  padding-right: 0px;
+  display: block;
+}
+#xShare_v .xShare_btn.buffer .fa {
+  margin-right: 0px;
+  left: 9px;
+  margin-bottom: 4px;
+}
+#xShare_v .xShare_btn.buffer {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#xShare_v .xShare_btn.facebook {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+@media screen and (max-width: 479px) {
+  .mct_xShare_counter div{
+      font-size: 17px;
+      line-height: 17px;
+  }
+
+  /* .xShare_btn_text{display:none} */
+  /* .mct_xShare_buttons a{width:32px;height:32px;float: none;display: inline-block;text-align: center;} */
+  .mct_xShare_buttons{text-align:left}
+  /* .xShare_btn{padding-right:0px;margin-right:5px !important;} */
+}
